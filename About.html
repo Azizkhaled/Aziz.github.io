@@ -75,16 +75,24 @@
 
 				<!-- Footer -->
 				<footer id="footer">
-					<!-- <section>
-						<form method="post" action="#">
+					<section>
+						<h2>Get in touch</h2>
+						<form method="post" action="https://formsubmit.co/4f245da25088550d6678d88363e0487f">
+							<!-- Honeypot -->
+							<input type="text" name="_honey" style="display: none;">
+							<!-- Disable Captcha -->
+							<input type="hidden" name="_captcha" value="false">
+							<!-- Success Message -->
+							<input type="hidden" name="_next" value="azizalnajjar.ca/success.html">
+
 							<div class="fields">
 								<div class="field">
 									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
+									<input type="text" name="name" id="name" required>
 								</div>
 								<div class="field">
 									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
+									<input type="text" name="email" id="email" required>
 								</div>
 								<div class="field">
 									<label for="message">Message</label>
@@ -95,7 +103,9 @@
 								<li><input type="submit" value="Send Message" /></li>
 							</ul>
 						</form>
-					</section> -->
+					</section>
+
+
 					<section class="split contact">
 						<section class="alt">
 							<h3>Address</h3>
@@ -103,7 +113,7 @@
 								Riyadh, Saudi Arabia
 							</p>
 						</section>
-						<section>
+						<section class="alt">
 							<h3>Phone</h3>
 							<p><a href="tel:+1 (343) 202-1948">+1 (343) 202-1948</a> <br /> 
 							<a href="tel: +966 50 303 1947">+966 50 303 1947</a> </p>
@@ -125,7 +135,7 @@
 
 			<!-- Copyright -->
 				<div id="copyright">
-					<ul><li>&copy; Aziz Al-Najjar</li></ul>
+					<ul><li>&copy; 2023 Aziz Al-Najjar</li></ul>
 				</div>
 
 		</div>

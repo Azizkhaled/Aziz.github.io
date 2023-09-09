@@ -3704,6 +3704,7 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
+		
 			#nav ul.links li {
 				display: block;
 				padding-left: 0;
@@ -3721,7 +3722,7 @@ input, select, textarea {
 				}
 
 					#nav ul.links li a:hover {
-						color: inherit !important;
+						color: #18bfef !important;
 						background-color: rgba(255, 255, 255, 0.1);
 					}
 
@@ -3737,6 +3738,7 @@ input, select, textarea {
 							color: #18bfef !important;
 						}
 
+						
 		#nav ul.icons {
 			-moz-flex-grow: 0;
 			-webkit-flex-grow: 0;

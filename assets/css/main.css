@@ -1348,8 +1348,9 @@ input, select, textarea {
 			#header .content p {
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
-				font-size: 0.8rem;
+				font-size: 0.85rem;
 				line-height: 2;
+				font-weight: 510;
 			}
 
 		#header nav ul {
@@ -1383,6 +1384,7 @@ input, select, textarea {
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
+					font-weight: 600;
 				}
 
 					#header nav ul li a:hover {
@@ -1563,7 +1565,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.60);
+			background-color: rgba(27, 31, 34, 0.80);
 			border-radius: 4px;
 			opacity: 0;
 		}

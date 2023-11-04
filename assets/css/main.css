@@ -682,7 +682,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 50%;
 		}
 
 			.image.left img, .image.right img {
@@ -691,7 +691,7 @@ input, select, textarea {
 
 		.image.left {
 			float: left;
-			padding: 0 1.5em 1em 0;
+			padding: 0 1.5em 0.5em 0;
 			top: 0.25em;
 		}
 

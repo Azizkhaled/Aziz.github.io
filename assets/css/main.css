@@ -1654,6 +1654,14 @@ input, select, textarea {
 		margin-top: 2rem;
 		text-align: center;
 	}
+	#footer .actions {
+		display: flex;
+		justify-content: center;
+		align-items: center; /* If you also want vertical centering */
+		list-style: none; /* This removes the default bullet points from the list */
+		padding: 0; /* This removes the default padding from the list */
+	}
+	
 
 		#footer .copyright {
 			letter-spacing: 0.2rem;

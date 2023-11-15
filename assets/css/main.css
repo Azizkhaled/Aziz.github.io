@@ -67,7 +67,7 @@ body {
   }
   
   #background {
-	background: radial-gradient(at bottom right, #14395c 10%, #05363b 55%, #000000 90%); 
+	background: radial-gradient(at bottom right, #081724 10%, #032124 55%, #000000 90%); 
   }
   
 
@@ -191,12 +191,21 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2{
 		color: #ffffff;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
 		text-transform: uppercase;
+		letter-spacing: 0.2rem;
+	}
+
+	h3, h4, h5, h6 {
+		color: #ffffff;
+		font-weight: 600;
+		line-height: 1.5;
+		margin: 0 0 1rem 0;
+		text-transform: capitalize;
 		letter-spacing: 0.2rem;
 	}
 
@@ -304,6 +313,14 @@ input, select, textarea {
 		border-bottom: solid 1px #ffffff;
 		margin: 2.75rem 0;
 	}
+
+	hr2 {
+		border: 0;
+		border-bottom: solid 1px #ffffff;
+		margin: 2.75rem 0;
+	}
+
+	
 
 	.align-left {
 		text-align: left;
@@ -653,7 +670,51 @@ input, select, textarea {
 		}
 
 /* Image */
+	.project-item {
+		display: flex;
+		/* align-items: center; Aligns items vertically in the center */
+		margin-bottom: 20px; /* Space between items */
+	}
 
+	.project-item .image.left {
+		flex: 0 0 auto; /* Do not grow or shrink */
+		margin-right: 0px; /* Space between image and content */
+	}
+	
+	.project-item .content {
+		flex-grow: 1; /* Allows content to take up remaining space */
+		text-align: left;
+	}
+/* Styles for screens with a max-width of 480px */
+@media screen and (max-width: 480px) {
+	
+    .project-item {
+        flex-direction: column; /* Stack children vertically */
+        /* align-items: stretch; Stretch items to fill the width */
+		align-items: stretch;
+		text-align: center;
+		
+    }
+
+	.project-item .image.left {
+        margin-left: 1.2rem; 
+        /* margin-left: auto; Center the image */
+        margin-right: auto; 
+        max-width: 100%; /* Maximum width of image is 100% of its container */
+        width: auto; /* Maintain the original width of the image */
+    }
+
+    .project-item .image.left img {
+        width: auto; /* Maintain the original width of the image */
+        max-width: 100%; /* Ensure it doesn't exceed the container's width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .project-item .content {
+        margin-top: 10px; /* Add some space between the image and the text */
+		text-align: center;
+    }
+}
 	.image {
 		border-radius: 4px;
 		border: 0;
@@ -1088,6 +1149,7 @@ input, select, textarea {
 			font-size: 0.6rem;
 			height: 2.0625rem;
 			line-height: 2.0625rem;
+			/* margin-left: 1rem; */
 		}
 
 		input[type="submit"].primary,
@@ -1250,6 +1312,10 @@ input, select, textarea {
 				padding: 1rem;
 			}
 
+			#header .content p {
+				text-align: left;
+			}
+			
 		}
 
 /* Header */
@@ -1346,9 +1412,9 @@ input, select, textarea {
 				}
 
 			#header .content p {
-				text-transform: uppercase;
+				/* text-transform: uppercase; */
 				letter-spacing: 0.2rem;
-				font-size: 0.85rem;
+				font-size: 0.90rem;
 				line-height: 2;
 				font-weight: 510;
 			}
